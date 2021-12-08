@@ -1,24 +1,56 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <div className="navigation">
+          <ul>
+            <li className="list active">
+              <a href="/">
+                <span className="icon">
+                  <ion-icon name="home"></ion-icon>
+                </span>
+                <span className="text">Home</span>
+              </a>
+            </li>
+            <li className="list">
+              <a href="/">
+                <span className="icon">
+                  <ion-icon name="person"></ion-icon>
+                </span>
+                <span className="text">Profile</span>
+              </a>
+            </li>
+            <li className="list">
+              <a href="/">
+                <span className="icon">
+                  <ion-icon name="mail"></ion-icon>
+                </span>
+                <span className="text">Messages</span>
+              </a>
+            </li>
+            <li className="list">
+              <a href="/">
+                <span className="icon">
+                  <ion-icon name="camera"></ion-icon>
+                </span>
+                <span className="text">Photos</span>
+              </a>
+            </li>
+            <li className="list">
+              <a href="/">
+                <span className="icon">
+                  <ion-icon name="settings"></ion-icon>
+                </span>
+                <span className="text">Settings</span>
+              </a>
+            </li>
+            <div className="indicator"></div>
+          </ul>
+        </div>
+      </div>
+    </>
   );
 }
 
